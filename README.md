@@ -8,4 +8,4 @@ corresponds to a seperate galaxy cluster and contains four files:
 4. [CLUSTER_NAME]_sample.jld2: The source images for the cluster
 
 # List of galaxy cluster
-1. SMACS J0723.3$-$7327 (z=0.387)
+1. SMACS J0723.3-7327 ($z=0.387$)
