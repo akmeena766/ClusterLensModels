@@ -22,5 +22,11 @@ corresponds to a seperate galaxy cluster and contains four files:
 3. [CLUSTER_NAME]_cluster_gals.txt: The source data for the cluster
 4. [CLUSTER_NAME]_sample.jld2: The source images for the cluster
 
+
+---
+# Example scripts
+1. Errors.ipynb
+
+---
 # List of galaxy cluster
 1. SMACS J0723.3-7327 ($z=0.387$)
