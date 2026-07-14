@@ -8,7 +8,10 @@ as low resolution fits maps. This might again lead to issue if we need to get er
 magnification regions.
 
 Hence, instead of sharing the data products, we share the best-fit lens model itself and $10^3$ 
-samples from the posterior distribution function. 
+samples from the posterior distribution function with `burn_in=0.02` in a `.jld2` file.
+
+In addition, we also share the cluster galaxy, lensed image catalog, and input YAML file. In case
+the user need to run their own lens models.
 
 ---
 This repository contains the YAML file for modeling galaxy clusters using LensFactory. Each folder
