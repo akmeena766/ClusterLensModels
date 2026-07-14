@@ -1,4 +1,9 @@
 # Cluster Lens Models
+
+When we generate lens model, we run long chains ($>10^5$) to infer the posterior probability 
+distribution function, implying a few GBs of space for each lens model. 
+
+---
 This repository contains the YAML file for modeling galaxy clusters using LensFactory. Each folder
 corresponds to a seperate galaxy cluster and contains four files:
 
