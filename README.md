@@ -8,25 +8,31 @@ as low resolution fits maps. This might again lead to issue if we need to get er
 magnification regions.
 
 Hence, instead of sharing the data products, we share the best-fit lens model itself and $10^3$ 
-samples from the posterior distribution function with `burn_in=0.02` in a `.jld2` file.
-
-In addition, we also share the cluster galaxy, lensed image catalog, and input YAML file. In case
+samples from the posterior distribution function with `burn_in=0.02` in a `.jld2` file. In 
+addition, we also share the cluster galaxy, lensed image catalog, and input YAML file. In case
 the user need to run their own lens models.
 
----
-This repository contains the YAML file for modeling galaxy clusters using LensFactory. Each folder
-corresponds to a seperate galaxy cluster and contains four files:
-
-1. [CLUSTER_NAME]_input.yaml: The YAML file for modeling the cluster
-2. [CLUSTER_NAME]_images.txt: The imaging data for the cluster
-3. [CLUSTER_NAME]_cluster_gals.txt: The source data for the cluster
-4. [CLUSTER_NAME]_sample.jld2: The source images for the cluster
-
 
 ---
-# Example scripts
-1. Errors.ipynb
+### File structure
+
+Each folder in this repository containts lens modeling setup for a one galaxy cluster. And each 
+folder contains four files:
+
+1. [CLUSTER_NAME]_images.txt: Catalog of multiply lensed galxies.
+2. [CLUSTER_NAME]_cluster_gals.txt: Catalog of cluster galaxy components.
+3. [CLUSTER_NAME]_input.yaml: The YAML file containing full set-up used for modeling the cluster.
+4. [CLUSTER_NAME]_sample.jld2: Contains best-fit model and 1000 posterior samples from the chain 
+   (with 2% burn-in).
+
 
 ---
-# List of galaxy cluster
+## Example scripts
+1. BestFit.ipynb: This notebook demonstrats how to extract best-fit lens the model and calculate 
+   various lensing quantities such as potential, deflection, convergence, and shear.
+1. Errors.ipynb: This notebook demonstrats the error analysis using posterior samples
+   at pixels where magnication is greater than 5.
+
+---
+## List of galaxy cluster
 1. SMACS J0723.3-7327 ($z=0.387$)
