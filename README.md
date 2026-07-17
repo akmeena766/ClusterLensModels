@@ -30,8 +30,7 @@ folder contains four files:
 ## Example scripts
 1. BestFit.ipynb: This notebook demonstrats how to extract best-fit lens the model and calculate 
    various lensing quantities such as potential, deflection, convergence, and shear.
-1. Errors.ipynb: This notebook demonstrats the error analysis using posterior samples
-   at pixels where magnication is greater than 5.
+1. Errors.ipynb: This notebook demonstrats how to calculate errors based on the posterior samples.
 
 ---
 ## List of galaxy cluster
