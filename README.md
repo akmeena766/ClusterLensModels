@@ -20,7 +20,7 @@ information provided in the input YAML file.
 ---
 ### File structure
 
-Each folder in this repository containts lens modeling setup for a one galaxy cluster. And each 
+Each folder in this repository containts lens modeling setup for one galaxy cluster. And each 
 folder contains four files:
 
 1. [CLUSTER_NAME]_images.txt: Catalog of multiply lensed galxies.
@@ -38,4 +38,6 @@ folder contains four files:
 
 ---
 ## List of galaxy cluster
-1. SMACS J0723.3-7327 ($z=0.387$)
+| # | Cluster Name                                   | Redshift   | 
+|---|------------------------------------------------|------------|
+| 1 | SMACS J0723.3-7327                             | $z=0.387$  |
