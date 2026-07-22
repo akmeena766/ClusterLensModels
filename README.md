@@ -1,16 +1,20 @@
 # Cluster Lens Models
 
-When we generate lens model, we run long chains ($>10^5$) to infer the posterior probability 
-distribution function. This results in a few GBs of space for each lens model and sharing such 
-large files is challenging. One way to circumvent this is sharing best-fit data products (such 
-as potential, deflection, convergence, and shear) as high-resolution fits maps and error models
-as low resolution fits maps. This might again lead to issue if we need to get error in high 
-magnification regions.
+This repository contains strong lens models reconstructed using 
+[`LensFactory.jl`](https://github.com/akmeena766/LensFactory.jl) for various galaxy clusters.
 
-Hence, instead of sharing the data products, we share the best-fit lens model itself and $10^3$ 
-samples from the posterior distribution function with `burn_in=0.02` in a `.jld2` file. In 
-addition, we also share the cluster galaxy, lensed image catalog, and input YAML file. In case
-the user need to run their own lens models.
+Usually, when we generate lens model, we run long chains ($>10^5$) to infer the posterior 
+probability distribution function. This results in a few GBs of space for each lens model and 
+sharing such large files is challenging. One way to circumvent this is sharing best-fit data 
+products (such as potential, deflection, convergence, and shear) as high-resolution fits maps 
+and error models as low resolution fits maps. This might again lead to issue if we need to get 
+error in high magnification regions.
+
+Hence, instead of sharing the data products, we share the best-fit lens model itself and 
+$10^3$ samples from the posterior distribution function with `burn_in=0.02` in a `.jld2` file.
+In addition, we also share the cluster galaxy, lensed image catalog, and input YAML file. 
+In case the user need to run their own lens models, they can do so with the help of the 
+information provided in the input YAML file.
 
 
 ---
